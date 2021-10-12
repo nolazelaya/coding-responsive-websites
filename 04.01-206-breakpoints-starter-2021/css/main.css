@@ -1,5 +1,9 @@
 body {
+<<<<<<< HEAD
   background: violet;
+=======
+    background: blue;
+>>>>>>> breakpoints
 }
 
 /* ----------- For screens 768px and larger ----------- */
@@ -11,7 +15,12 @@ body {
 
 /* ----------- For screens 1200px wide and larger----------- */
 @media (min-width: 1200px) {
+<<<<<<< HEAD
 	body {
     background: blue;
+=======
+  body {
+    background: violet;
+>>>>>>> breakpoints
   }
 }
