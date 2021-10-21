@@ -13,6 +13,7 @@
 html, body {
     color: #fff;
     background-color: #000;
+    background: url("../img/bkgd-custom.jpg");
     font-size: 1em;
     line-height: 1.4;
 }
@@ -104,18 +105,18 @@ html {
 
 header {
     padding-bottom: 25px;
-    border-bottom: 1px solid #999;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
 h1 {
-    font-family: serif;
+    font-weight: lighter;
 }
 
 .wrapper {
@@ -124,12 +125,9 @@ h1 {
   display: flex;
   padding-top: 25px;
   justify-content: space-between;
-  font-weight: 700;
-  background-color: #000;
+
 }
 #center-article {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
     padding: 0px 25px 0px 25px;
 }
 
@@ -141,7 +139,7 @@ h1 {
   line-height: 1.5em;
   font-size: 1em;
   font-weight: 400;
-  background-color: #000;
+  background-color: rgba(70, 50, 100, 0.5);
   height: 300px;
   justify-content: center;
   align-items: center;
