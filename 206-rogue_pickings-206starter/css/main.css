@@ -45,7 +45,6 @@ header h1 span {
 }
 
 header nav {
-	float: right;
 	padding: 46px 0;
 }
 header nav ul {
@@ -136,10 +135,8 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
-	clear: both;
 	text-align: center;
 }
 footer span {
