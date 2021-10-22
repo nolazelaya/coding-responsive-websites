@@ -32,8 +32,6 @@ p {
 
 header {
 	border-bottom: 3px solid #77a466;
-	text-align: center;
-	margin: 0 auto;
 }
 
 header h1 {
@@ -155,6 +153,9 @@ footer span {
 	.container {
 		padding: 20px;
 	}
+	header nav ul li {
+		padding: 10px;
+	}
 	.top-section {
 		flex-flow: column;
 	}
@@ -197,6 +198,12 @@ footer span {
 	.container {
 		padding: 20px;
 	}
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 	header nav ul {
 		align-items: center;
 		flex-flow: row;
@@ -218,8 +225,12 @@ footer span {
 	.container {
 		max-width: 1200px;
 	}
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 	header nav ul {
-		align-items: center;
 		flex-flow: row;
 	}
 	.top-section {
@@ -230,4 +241,4 @@ footer span {
 	.section-three {
 		flex-basis: 33%;
 	}
-	}
+}
