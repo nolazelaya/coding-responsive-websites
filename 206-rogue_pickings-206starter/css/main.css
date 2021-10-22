@@ -97,7 +97,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	height: auto; */
+	height: auto; 
 	border-top: 1px solid #eee;
 }
 
@@ -203,8 +203,6 @@ footer span {
 	}
 	.top-section {
 		flex-flow: column;
-	}
-	.bottom-section {
 	}
 	.section-one,
 	.section-two,
