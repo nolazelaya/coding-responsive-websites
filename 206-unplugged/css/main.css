@@ -87,6 +87,87 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ /* -------------------- Base Header - Footer Styles -------------------- */
+ 
+ header,
+ footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+ }
+ 
+ header .content-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+ }
+ 
+ header nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-flow: row wrap;
+ }
+ 
+ header nav ul {
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ footer .social-icons {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ 
+ footer .social-icons p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+/* -----------------------  Retreat Style ----------------------- */
+
+.retreat {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+ /* -----------------------  Faetures Style ----------------------- */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* -----------------------  Reviews Style ----------------------- */
+
+.review {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* -----------------------  Contact Style ----------------------- */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
