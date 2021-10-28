@@ -87,6 +87,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* -----------------------  Base Content Style ----------------------- */
+
+.content-wrapper {
+  width: 100%;
+}
+
  /* -------------------- Base Header - Footer Styles -------------------- */
  
  header,
@@ -97,11 +103,20 @@ textarea {
    flex-flow: row wrap;
  }
  
+header {
+  padding: 15px 0;
+}
+
+footer {
+  padding: 10px 0;
+}
+
  header .content-wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
+   margin: 0;
  }
  
  header nav {
@@ -109,13 +124,33 @@ textarea {
    justify-content: space-around;
    align-items: center;
    flex-flow: row wrap;
+   width: 60%;
+   padding: 20px 0;
  }
  
  header nav ul {
    display: flex;
    justify-content: space-around;
  }
- 
+
+.header-divider {
+  width: 45%;
+}
+
+footer .content-wrapper {
+  margin: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
  footer .social-icons {
    display: flex;
    justify-content: space-around;
@@ -128,7 +163,12 @@ textarea {
    align-items: center;
  }
 
+
 /* -----------------------  Retreat Style ----------------------- */
+
+.retreat .content-wrapper {
+  padding: 30px 20px;
+}
 
 .retreat {
   display: flex;
@@ -137,6 +177,10 @@ textarea {
 }
 
  /* -----------------------  Faetures Style ----------------------- */
+
+.features .content-wrapper {
+  padding: 60px 20px;
+}
 
 .features {
   display: flex;
@@ -149,14 +193,27 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 56%;
+}
+
+.features p {
+  margin: 0;
 }
 
 /* -----------------------  Reviews Style ----------------------- */
 
-.review {
+.reviews .content-wrapper {
+  padding: 60px 20px;
+}
+
+.reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h3 {
+  width: 49%;
 }
 
 /* -----------------------  Contact Style ----------------------- */
@@ -167,6 +224,10 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
+/* -----------------------  Copyright Style ----------------------- */
+
+
 
 /* ==========================================================================
    Helper classes
