@@ -91,9 +91,9 @@ textarea {
 
 /* -----------------------  Base Content Style ----------------------- */
 
-/* .content-wrapper {
+.content-wrapper {
   width: 100%;
-} */
+}
 
  /* -------------------- Base Header - Footer Styles -------------------- */
  
@@ -105,10 +105,6 @@ textarea {
    align-items: center;
  }
  
-header {
-  padding: 15px 0 0 0;
-}
-
 footer {
   padding: 10px 0;
 }
@@ -118,9 +114,8 @@ footer {
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
-   margin: 0;
+   margin: 10px 0 0 0;
    padding: 0;
-   flex-basis: 360px;
  }
 
  header img {
@@ -131,7 +126,7 @@ footer {
   width: 360px;
   border: 0;
   border-top: 1px solid #3a3a3a;
-  margin: 1em 0;
+  margin-top: 10px;
   padding: 0;
   overflow: visible;
 }
@@ -146,10 +141,9 @@ footer {
  header nav ul {
    display: flex;
    flex-flow: row;
-   flex-basis: 160px;
    justify-content: space-between;
    text-transform: uppercase;
-   font-weight: 300;
+   font-weight: bold;
    /* Remove bullets from list items */
    list-style: none;
    /* Remove indentation from list items */
@@ -173,28 +167,6 @@ h1 {
   font-size: 2em;
 }
 
-.footer-content {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-footer p {
-  margin: 0;
-}
-
- footer .social-icons {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
- }
- 
- footer .social-icons p {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
 img {
   max-width: 100%;
 }
@@ -206,43 +178,67 @@ img {
   justify-content: left;
   flex-flow: row wrap;
   align-items: left;
+  width: 100%;
+  min-height: 830px;
+}
+
+.retreat-headline {
+  padding: 30px 20px;
+  width: 100%;
   background-image: url("../img/jake-melara-30679-unsplash.jpg");
-  background-size:300%;
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
+  /* background-size:100%; */
+  /* background-position: 50%; */
+  /* background-repeat: no-repeat; */
 }
 
 .retreat h1 {
-  padding: 30px 0px 335px 20px;
+  font-weight:400;
+  font-size: 2em;
+  margin: 0;
+  line-height: 1.3em;
+  max-width: 300px;
 }
 
 .retreat h2 {
   font-weight:500;
-  align-self: left;
-  text-align: left;
-  padding: 10px 20px;
   font-size: 1em;
+  line-height: 2em;
+  margin: 0;
 }
 
 .retreat p {
-  padding: 10px 20px;
   font-size: .78em;
+  margin: 0;
 }
-.retreat aside {
-  background-color:#527158 ;
-}
-.form {
+
+/* -----------------------  Aside Style ----------------------- */
+
+.aside-content {
+  background-color:#527158;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
-  width: 100%;
-  padding-bottom: 50px;
+  flex-flow: row wrap;
+  height: 330px;
 }
+
+.retreat-join {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 5%;
+}
+
+.retreat-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  justify-content: space-evenly;
+  margin: 5%;
+  width: 100%;
+}
+
 input {
   height: 50px;
-  width: 90%;
   font-size: .78em;
   font-style: italic;
   color: #ccc;
@@ -255,7 +251,6 @@ input {
   border: 0;
   box-shadow: none;
   border-radius: 0px;
-  width: 90%;
   font-style: normal;
 }
 
@@ -270,7 +265,7 @@ input {
   justify-content: center;
   flex-flow: row wrap;
   background-image: url("../img/rawpixel-800820-unsplash1.jpg");
-  background-size: cover;
+  background-size:cover;
 }
 
 article {
@@ -278,7 +273,6 @@ article {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  flex-basis: 200px;
 }
 
 .features-item-description {
@@ -300,12 +294,16 @@ article {
 /* -----------------------  Reviews Style ----------------------- */
 
 .reviews {
+  background-color:#527158;
+}
+.reviews .content-wrapper {
+  width: 90%;
+  margin:0 5%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
-  flex-basis: 360px;
-  background-color:#527158 ;
-  padding: 30px;
+
 
 }
 
@@ -322,13 +320,14 @@ article {
 .reviews p {
   font-size: .77em;
 }
+
 /* -----------------------  Contact Style ----------------------- */
 
-.content-wrapper .footer-content {
-  background-color: #202322;
+footer {
+  background-color: #2b3733;
 }
 
-.footer-content .contact {
+.footer-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -344,16 +343,53 @@ article {
   font-size: .77em;
 }
 
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  /* flex-basis: 26%; */
+}
 
+.contact p {
+  margin: 0
+}
+
+/* -----------------------  Social Style ----------------------- */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 200px;
+  /* margin: 20px 23.6%; */
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons img {
+  width: 40px;
+}
+
+/* -----------------------  Copyright Style ----------------------- */
+
+.copyright {
+  margin: 0 20%;
+}
 .copyright h3 {
   font-size: .77em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-
-/* -----------------------  Copyright Style ----------------------- */
-
-
 
 /* ==========================================================================
    Helper classes
@@ -445,12 +481,83 @@ article {
 
    @media only screen and (min-width: 768px) {
     /*Tablet styles here*/
+      /* Header Styles */
+        header .content-wrapper {
+          flex-basis: 768px;
+          justify-content: space-between;
+          margin: 30px 0;
+        }
+        .header-divider {
+          border: 0;
+          width: unset;
+        }
+        header nav {
+          padding-left: 60px;
+        }
+      /* Retreat Styles */
+        .retreat h1 {
+          padding: 30px 0px 335px 60px;
+          max-width: 500px;
+        }
+        .retreat .aside-content {
+          width: 100%;
+          justify-content: space-between;
+        }
+        .retreat-join {
+          width: 40%;
+          justify-content: center;
+        }
+        .retreat-form {
+          width: 40%;
+          justify-content: space-evenly;
+        }
+        .retreat h2 {
+          font-weight:500;
+          font-size: 1.33em;
+          margin: 0;
+        }
+
+      /* Features Styles */
+
+      .features h1 {
+        font-size: 2em;
+      }
+      .features article {
+        margin: 5%;
+      }
+      .features-item-description {
+        width: 25%;
+      }
+
+            /* Reviews Styles */
+
+      .reviews {
+        padding: 3%;
+      }
+      .team-photo,
+      .team-review {
+        width: 45%;
+        margin: 1%;
+      }
+
+            /* Footer Styles */
+
+      .footer-content {
+        flex-flow: row wrap;
+      }
+      .contact,
+      .social {
+        width: 45%;
+      }
+      .social-icons {
+        justify-content: space-evenly;
+      }
+}
 
 
-    }
-     
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+
     }
 
 @media print,
