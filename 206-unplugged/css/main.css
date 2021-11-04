@@ -12,9 +12,11 @@
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
+  color: #e2e3ed;
+  background-color: #202322;
+  font-size: 18px;
   line-height: 1.4;
+  font-family: 'Poppins', sans-serif;
 }
 
 /*
@@ -45,7 +47,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #3a3a3a;
   margin: 1em 0;
   padding: 0;
 }
@@ -89,22 +91,22 @@ textarea {
 
 /* -----------------------  Base Content Style ----------------------- */
 
-.content-wrapper {
+/* .content-wrapper {
   width: 100%;
-}
+} */
 
  /* -------------------- Base Header - Footer Styles -------------------- */
  
  header,
  footer {
    display: flex;
+   flex-flow: row wrap;
    justify-content: center;
    align-items: center;
-   flex-flow: row wrap;
  }
  
 header {
-  padding: 15px 0;
+  padding: 15px 0 0 0;
 }
 
 footer {
@@ -117,28 +119,58 @@ footer {
    align-items: center;
    flex-flow: row wrap;
    margin: 0;
+   padding: 0;
+   flex-basis: 360px;
  }
- 
+
+ header img {
+   width: 220px;
+ }
+
+ .header-divider {
+  width: 360px;
+  border: 0;
+  border-top: 1px solid #3a3a3a;
+  margin: 1em 0;
+  padding: 0;
+  overflow: visible;
+}
  header nav {
    display: flex;
-   justify-content: space-around;
    align-items: center;
    flex-flow: row wrap;
-   width: 60%;
-   padding: 20px 0;
+   justify-content: center;
+   
  }
  
  header nav ul {
    display: flex;
-   justify-content: space-around;
+   flex-flow: row;
+   flex-basis: 160px;
+   justify-content: space-between;
+   text-transform: uppercase;
+   font-weight: 300;
+   /* Remove bullets from list items */
+   list-style: none;
+   /* Remove indentation from list items */
+   margin: 10px;
+   padding: 0;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
  }
 
-.header-divider {
-  width: 45%;
+header nav li {
+  margin: 0 25px;
 }
 
-footer .content-wrapper {
-  margin: 50px 0;
+a:link, a:visited {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight:500;
+  font-size: 2em;
 }
 
 .footer-content {
@@ -163,66 +195,160 @@ footer p {
    align-items: center;
  }
 
+img {
+  max-width: 100%;
+}
 
 /* -----------------------  Retreat Style ----------------------- */
 
 .retreat .content-wrapper {
-  padding: 30px 20px;
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+  align-items: left;
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
+  background-size:300%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
 }
 
-.retreat {
+.retreat h1 {
+  padding: 30px 0px 335px 20px;
+}
+
+.retreat h2 {
+  font-weight:500;
+  align-self: left;
+  text-align: left;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.retreat p {
+  padding: 10px 20px;
+  font-size: .78em;
+}
+.retreat aside {
+  background-color:#527158 ;
+}
+.form {
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+input {
+  height: 50px;
+  width: 90%;
+  font-size: .78em;
+  font-style: italic;
+  color: #ccc;
+}
+
+.download-button {
+  background-color:#2a423a;
+  text-transform: uppercase;
+  color: #e2e3ed;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  width: 90%;
+  font-style: normal;
 }
 
  /* -----------------------  Faetures Style ----------------------- */
 
 .features .content-wrapper {
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-size: cover;
 }
 
-.features .features-items {
+article {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 200px;
+}
+
+.features-item-description {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 56%;
+  margin:0;
+  padding: 20px 50px;
+  text-align: center;
+  font-size:.77em;
+  color: #d8d9e0;
 }
 
-.features p {
-  margin: 0;
+.features h1 {
+  font-size:1.66em ;
 }
 
 /* -----------------------  Reviews Style ----------------------- */
-
-.reviews .content-wrapper {
-  padding: 60px 20px;
-}
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  flex-basis: 360px;
+  background-color:#527158 ;
+  padding: 30px;
+
 }
 
-.reviews h3 {
-  width: 49%;
+.reviews h1 {
+  font-size: 1.66em;
 }
 
+.reviews h2 {
+  font-size: 1em;
+  font-weight: 400;
+  width: 55%;
+}
+
+.reviews p {
+  font-size: .77em;
+}
 /* -----------------------  Contact Style ----------------------- */
 
-.contact {
+.content-wrapper .footer-content {
+  background-color: #202322;
+}
+
+.footer-content .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer-content h2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.footer-content p {
+  font-size: .77em;
+}
+
+
+.copyright h3 {
+  font-size: .77em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 /* -----------------------  Copyright Style ----------------------- */
@@ -317,9 +443,15 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+
+    }
+     
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+    }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
