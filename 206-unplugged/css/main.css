@@ -11,14 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #e2e3ed;
-  background-color: #202322;
-  font-size: 18px;
-  line-height: 1.4;
-  font-family: 'Poppins', sans-serif;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -88,7 +80,68 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   */
+   /* General Styles */
+    
+   html {
+    color: #e2e3ed;
+    background-color: #202322;
+    font-size: 18px;
+    line-height: 1.4; 
+   }
+    
+   body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+   }
+    
+   ul, 
+   ol {
+    font-size: 1em;
+   }
+    
+   a {
+     /* Style Pending */
+   }
+    
+    h1 {
+      color: #e2e3ed;
+    }
 
+   h2 {
+    color: #e2e3ed;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 0;
+   }
+    
+   h3, 
+   h4 {
+    color: #e2e3ed;
+    font-family: 'Poppins', sans-serif;
+   }
+    
+   p {
+    color: #e2e3ed;
+   }
+    
+   img {
+         /* Style Pending */
+   }
+    
+   figure {
+         /* Style Pending */
+   }
+    
+   address {
+         /* Style Pending */
+   }
+    
+   .content-wrapper {
+         /* Style Pending */
+   }
 /* -----------------------  Base Content Style ----------------------- */
 
 .content-wrapper {
@@ -99,6 +152,7 @@ textarea {
  
  header,
  footer {
+   background-color: #202322;
    display: flex;
    flex-flow: row wrap;
    justify-content: center;
@@ -149,7 +203,6 @@ footer {
    /* Remove indentation from list items */
    margin: 10px;
    padding: 0;
-   font-size: 1em;
    font-family: 'Open Sans', sans-serif;
  }
 
@@ -197,13 +250,6 @@ img {
   margin: 0;
   line-height: 1.3em;
   max-width: 300px;
-}
-
-.retreat h2 {
-  font-weight:500;
-  font-size: 1em;
-  line-height: 1.25em;
-  margin: 0;
 }
 
 .retreat p {
@@ -336,10 +382,7 @@ article {
 }
 
 .reviews h2 {
-  font-size: 1em;
-  font-weight: 400;
   width: 55%;
-  margin: 0;
 }
 
 .reviews p {
@@ -357,11 +400,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer-content h2 {
-  font-size: 1em;
-  font-weight: 500;
 }
 
 .footer-content p {
@@ -545,9 +583,7 @@ footer {
         justify-content: space-evenly;
       }
       .retreat h2 {
-        font-weight:500;
-        font-size: 1.33em;
-        margin: 0 0 10px 0;
+         margin: 0 0 10px 0;
       }
 
     /* Features Styles */
@@ -634,12 +670,7 @@ footer {
         width: 40%;
         justify-content: space-evenly;
       }
-      .retreat h2 {
-        font-weight:500;
-        font-size: 1.33em;
-        margin: 0 0 10px 0;
-      }
-
+   
     /* Features Styles */
 
     .features .content-wrapper {
