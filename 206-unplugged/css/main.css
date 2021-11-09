@@ -179,7 +179,7 @@ img {
   flex-flow: row wrap;
   align-items: left;
   width: 100%;
-  min-height: 830px;
+  /* min-height: 830px; */
 }
 
 .retreat-headline {
@@ -202,7 +202,7 @@ img {
 .retreat h2 {
   font-weight:500;
   font-size: 1em;
-  line-height: 2em;
+  line-height: 1.25em;
   margin: 0;
 }
 
@@ -213,11 +213,18 @@ img {
 
 /* -----------------------  Aside Style ----------------------- */
 
+aside {
+  width:100%;
+  height:300px;
+}
+
 .aside-content {
   background-color:#527158;
   display: flex;
   flex-flow: row wrap;
-  height: 330px;
+  justify-content: space-evenly;
+  height: 100%;
+  width:100%;
 }
 
 .retreat-join {
@@ -226,6 +233,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   margin: 5%;
+  max-width: 300px;
 }
 
 .retreat-form {
@@ -233,15 +241,20 @@ img {
   flex-flow: column nowrap;
   align-items: left;
   justify-content: space-evenly;
-  margin: 5%;
   width: 100%;
+  max-width: 300px;
+  margin: 0 5%;
 }
 
 input {
+  padding:0;
+  margin:0;
+  border: 0;
   height: 50px;
-  font-size: .78em;
+  /* font-size: .78em; */
   font-style: italic;
   color: #ccc;
+  max-width: 320px;
 }
 
 .download-button {
@@ -252,12 +265,13 @@ input {
   box-shadow: none;
   border-radius: 0px;
   font-style: normal;
+  max-width: 320px;
 }
 
  /* -----------------------  Faetures Style ----------------------- */
 
 .features .content-wrapper {
-  padding: 30px 20px;
+  padding: 8% 5%;
 }
 
 .features {
@@ -281,7 +295,7 @@ article {
   align-items: center;
   flex-flow: row wrap;
   margin:0;
-  padding: 20px 50px;
+  padding: 25% 0;
   text-align: center;
   font-size:.77em;
   color: #d8d9e0;
@@ -291,6 +305,18 @@ article {
   font-size:1.66em ;
 }
 
+.fontawesome-icon {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 200px;
+  height: auto;
+  align-items: center;
+}
+
+.fontawesome-icon img{
+  max-width: 80px;
+  height: auto;
+}
 /* -----------------------  Reviews Style ----------------------- */
 
 .reviews {
@@ -301,10 +327,8 @@ article {
   margin:0 5%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
-
-
 }
 
 .reviews h1 {
@@ -315,6 +339,7 @@ article {
   font-size: 1em;
   font-weight: 400;
   width: 55%;
+  margin: 0;
 }
 
 .reviews p {
@@ -372,6 +397,7 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
+  max-width: 200px;
   margin: 0;
   padding: 0;
 }
@@ -479,86 +505,181 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
-      /* Header Styles */
-        header .content-wrapper {
-          flex-basis: 768px;
-          justify-content: space-between;
-          margin: 30px 0;
-        }
-        .header-divider {
-          border: 0;
-          width: unset;
-        }
-        header nav {
-          padding-left: 60px;
-        }
-      /* Retreat Styles */
-        .retreat h1 {
-          padding: 30px 0px 335px 60px;
-          max-width: 500px;
-        }
-        .retreat .aside-content {
-          width: 100%;
-          justify-content: space-between;
-        }
-        .retreat-join {
-          width: 40%;
-          justify-content: center;
-        }
-        .retreat-form {
-          width: 40%;
-          justify-content: space-evenly;
-        }
-        .retreat h2 {
-          font-weight:500;
-          font-size: 1.33em;
-          margin: 0;
-        }
-
-      /* Features Styles */
-
-      .features h1 {
-        font-size: 2em;
+  @media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+    /* Header Styles */
+      header .content-wrapper {
+        flex-basis: 768px;
+        justify-content: space-between;
+        margin: 30px 0;
       }
-      .features article {
-        margin: 5%;
+      .header-divider {
+        border: 0;
+        width: unset;
       }
-      .features-item-description {
-        width: 25%;
+      header nav {
+        padding-left: 60px;
       }
-
-            /* Reviews Styles */
-
-      .reviews {
-        padding: 3%;
+    /* Retreat Styles */
+      .retreat h1 {
+        padding: 30px 0px 335px 60px;
+        max-width: 500px;
       }
-      .team-photo,
-      .team-review {
-        width: 45%;
-        margin: 1%;
+      .retreat .content-wrapper aside {
+        width: 100%;
       }
-
-            /* Footer Styles */
-
-      .footer-content {
-        flex-flow: row wrap;
+      aside {
+        max-height: 240px;
       }
-      .contact,
-      .social {
-        width: 45%;
+      .retreat .aside-content {
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
       }
-      .social-icons {
+      .retreat-join {
+        width: 40%;
+        justify-content: center;
+      }
+      .retreat-form {
+        width: 40%;
         justify-content: space-evenly;
       }
-}
+      .retreat h2 {
+        font-weight:500;
+        font-size: 1.33em;
+        margin: 0 0 10px 0;
+      }
 
+    /* Features Styles */
+
+    article {
+      width: 100%;
+    }
+    .features .content-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 5% 8%;
+    }
+    .features h1 {
+      font-size: 2em;
+    }
+    .fontawesome-icon {
+      min-width: 50%;
+      max-width: 50%;
+    }
+    .features-item-description {
+      max-width: 65%;
+      padding: 2% 0;
+    }
+
+          /* Reviews Styles */
+
+    .reviews {
+      padding: 3%;
+    }
+    .reviews .content-wrapper {
+      justify-content: flex-start;
+}
+    .team-photo,
+    .team-review {
+      width: 45%;
+      margin: 1%;
+    }
+
+          /* Footer Styles */
+
+    .footer-content {
+      flex-flow: row wrap;
+    }
+    .contact,
+    .social {
+      width: 30%;
+    }
+    .social-icons {
+      justify-content: space-evenly;
+    }
+}
 
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
+      /* Header Styles */
+      header .content-wrapper {
+        flex-basis: 1200px;
+        justify-content: space-around;
+        margin: 30px 0;
+      }
+      .header-divider {
+        border: 0;
+        width: unset;
+      }
+      header nav {
+        padding-left: 30px;
+      }
+    /* Retreat Styles */
+      .retreat h1 {
+        padding: 30px 0px 335px 100px;
+        max-width: 500px;
+      }
+      .retreat .aside-content {
+        width: 100%;
+        justify-content: space-around;
+        max-height: 260px;
+      }
+      .retreat-join {
+        width: 40%;
+        justify-content: center;
+      }
+      .retreat-form {
+        width: 40%;
+        justify-content: space-evenly;
+      }
+      .retreat h2 {
+        font-weight:500;
+        font-size: 1.33em;
+        margin: 0 0 10px 0;
+      }
 
+    /* Features Styles */
+
+    .features .content-wrapper {
+      align-content: center;
     }
+    .features h1 {
+      font-size: 2em;
+    }
+    .fontawesome-icon {
+      min-width: 33.3%;
+      max-width: 33.3%;
+    }
+
+          /* Reviews Styles */
+
+    .reviews {
+      padding: 5% 6.4%;
+    }
+    .reviews h1 {
+      min-width: 75%;
+    }
+    .team-photo,
+    .team-review {
+      width: 45%;
+      margin: 1%;
+    }
+
+          /* Footer Styles */
+
+    .footer-content {
+      flex-flow: row wrap;
+    }
+    .contact,
+    .social {
+      width: 40%;
+    }
+    .social-icons {
+      justify-content: space-evenly;
+    }
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
