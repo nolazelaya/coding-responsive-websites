@@ -687,6 +687,12 @@ input[type=button] {
     }
 }
 
+/* -----------------------  Tablet About Style ----------------------- */
+
+.map figure {
+  padding-bottom: 45%;
+}
+
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
     /*  =============  Desktop Header Styles   =============  */
@@ -767,6 +773,13 @@ input[type=button] {
     .social-icons {
       justify-content: space-evenly;
     }
+
+    /* -----------------------  Desktop About Style ----------------------- */
+
+.map figure {
+  padding-bottom: 37.5%;
+}
+
 }
 
 @media print,
