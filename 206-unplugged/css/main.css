@@ -128,11 +128,11 @@ textarea {
    }
     
    img {
-         /* Style Pending */
+         width: 100%;
    }
     
    figure {
-         /* Style Pending */
+         margin: 0;
    }
     
    address {
@@ -158,11 +158,9 @@ textarea {
    justify-content: center;
    align-items: center;
  }
- 
 footer {
   padding: 10px 0;
 }
-
  header .content-wrapper {
    display: flex;
    justify-content: center;
@@ -171,11 +169,13 @@ footer {
    margin: 10px 0 0 0;
    padding: 0;
  }
-
- header img {
-   width: 220px;
+ header figure {
+     width: 55%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
  }
-
  .header-divider {
   width: 360px;
   border: 0;
@@ -191,8 +191,7 @@ footer {
    justify-content: center;
    
  }
- 
- header nav ul {
+  header nav ul {
    display: flex;
    flex-flow: row;
    justify-content: space-between;
@@ -205,21 +204,17 @@ footer {
    padding: 0;
    font-family: 'Open Sans', sans-serif;
  }
-
 header nav li {
   margin: 0 25px;
 }
-
 a:link, a:visited {
   color: #e2e3ed;
   text-decoration: none;
 }
-
 h1 {
   font-weight:500;
   font-size: 2em;
 }
-
 img {
   max-width: 100%;
 }
@@ -230,7 +225,7 @@ img {
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
-  align-items: left;
+  align-items: flex-start;
   width: 100%;
   /* min-height: 830px; */
 }
@@ -238,10 +233,10 @@ img {
 .retreat-headline {
   padding: 30px 20px;
   width: 100%;
-  background-image: url("../img/jake-melara-30679-unsplash.jpg");
-  /* background-size:100%; */
-  /* background-position: 50%; */
-  /* background-repeat: no-repeat; */
+  background-image: url('../img/unplugged-hero.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .retreat h1 {
@@ -280,7 +275,7 @@ aside {
 .retreat-form {
   display: flex;
   flex-flow: column nowrap;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
   max-width: 300px;
@@ -292,7 +287,6 @@ input {
   margin:0;
   border: 0;
   height: 50px;
-  /* font-size: .78em; */
   font-style: italic;
   color: #ccc;
   max-width: 320px;
@@ -314,14 +308,14 @@ input {
 .features .content-wrapper {
   margin-top: 10%;
   padding: 8% 5%;
+  background: url('../img/features-background.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
-  background-size:cover;
 }
 
 article {
@@ -578,7 +572,7 @@ input[type=button] {
     /*  =============  Tablet Header Styles   =============  */
       header .content-wrapper {
         flex-basis: 768px;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 30px 0;
       }
       .header-divider {
@@ -838,4 +832,3 @@ input[type=button] {
     page-break-after: avoid;
   }
 }
-
