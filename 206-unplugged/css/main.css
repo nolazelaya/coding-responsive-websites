@@ -224,7 +224,7 @@ img {
   max-width: 100%;
 }
 
-/* -----------------------  Retreat Style ----------------------- */
+/* -----------------------  Base Retreat Style ----------------------- */
 
 .retreat .content-wrapper {
   display: flex;
@@ -251,7 +251,7 @@ img {
   max-width: 300px;
 }
 
-/* -----------------------  Aside Style ----------------------- */
+/* -----------------------  Base Aside Style ----------------------- */
 
 aside {
   width:100%;
@@ -309,7 +309,7 @@ input {
   max-width: 320px;
 }
 
- /* -----------------------  Faetures Style ----------------------- */
+ /* -----------------------  Base Faetures Style ----------------------- */
 
 .features .content-wrapper {
   margin-top: 10%;
@@ -359,7 +359,7 @@ article {
   max-width: 80px;
   height: auto;
 }
-/* -----------------------  Reviews Style ----------------------- */
+/* -----------------------  Base Reviews Style ----------------------- */
 
 .reviews {
   background-color:#527158;
@@ -388,7 +388,7 @@ article {
   margin: 2%;
 }
 
-/* -----------------------  Contact Style ----------------------- */
+/* -----------------------  Base Contact Style ----------------------- */
 
 footer {
   background-color: #2b3733;
@@ -418,7 +418,7 @@ footer {
   margin: 0
 }
 
-/* -----------------------  Social Style ----------------------- */
+/* -----------------------  Base Social Style ----------------------- */
 
 .social {
   display: flex;
@@ -443,7 +443,7 @@ footer {
   width: 40px;
 }
 
-/* -----------------------  Copyright Style ----------------------- */
+/* -----------------------  Base Copyright Style ----------------------- */
 
 .copyright {
   margin: 0 20%;
@@ -575,7 +575,7 @@ input[type=button] {
   p {
     font-size: 1.125em;
   }
-    /* Header Styles */
+    /*  =============  Tablet Header Styles   =============  */
       header .content-wrapper {
         flex-basis: 768px;
         justify-content: space-between;
@@ -588,7 +588,12 @@ input[type=button] {
       header nav {
         padding-left: 60px;
       }
-    /* Retreat Styles */
+
+      header figure {
+        width: 27.73%;
+    }
+
+    /*  =============  Tablet Retreat Styles   =============  */
       .retreat h1 {
         padding: 30px 0px 335px 60px;
         max-width: 500px;
@@ -617,7 +622,7 @@ input[type=button] {
          margin: 0 0 10px 0;
       }
 
-    /* Features Styles */
+    /*  =============  Tablet Features Styles   =============  */
 
     article {
       width: 100%;
@@ -641,7 +646,7 @@ input[type=button] {
       padding: 2% 0;
     }
 
-          /* Reviews Styles */
+    /*  =============  Tablet Reviews Styles   =============  */
 
     .reviews {
       margin: 0;
@@ -656,7 +661,7 @@ input[type=button] {
       margin: 1%;
     }
 
-          /* Footer Styles */
+    /*  =============  Tablet Footer Styles   =============  */
 
     .footer-content {
       flex-flow: row wrap;
@@ -672,7 +677,7 @@ input[type=button] {
 
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
-      /* Header Styles */
+    /*  =============  Desktop Header Styles   =============  */
       header .content-wrapper {
         flex-basis: 1200px;
         justify-content: space-around;
@@ -685,7 +690,11 @@ input[type=button] {
       header nav {
         padding-left: 30px;
       }
-    /* Retreat Styles */
+      header figure {
+        width: 23.33%;
+    }
+
+    /*  =============  Desktop Retreat Styles   =============  */
       .retreat h1 {
         padding: 30px 0px 335px 100px;
         max-width: 500px;
@@ -705,7 +714,7 @@ input[type=button] {
         justify-content: space-evenly;
       }
    
-    /* Features Styles */
+    /*  =============  Desktop Features Styles   =============  */
 
     .features .content-wrapper {
       align-content: center;
@@ -720,7 +729,7 @@ input[type=button] {
     .features-item-description {
       font-size:1.125em;
     }
-          /* Reviews Styles */
+    /*  =============  Desktop Reviews Styles   =============  */
 
     .reviews {
       padding: 5% 1%;
@@ -734,7 +743,7 @@ input[type=button] {
       margin: 1%;
     }
 
-          /* Footer Styles */
+    /*  =============  Desktop Footer Styles   =============  */
 
     .footer-content {
       flex-flow: row wrap;
