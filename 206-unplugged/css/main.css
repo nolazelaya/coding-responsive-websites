@@ -106,6 +106,7 @@ textarea {
     h1 {
       color: #e2e3ed;
       font-size: 2.25em;
+      font-family: 'Poppins', sans-serif;
     }
 
    h2 {
@@ -158,9 +159,6 @@ textarea {
    justify-content: center;
    align-items: center;
  }
-footer {
-  padding: 10px 0;
-}
  header .content-wrapper {
    display: flex;
    justify-content: center;
@@ -347,7 +345,7 @@ article {
   max-width: 200px;
   height: auto;
   align-items: center;
-  padding: 15% 0;
+  padding: 10% 0;
 }
 
 .features i {
@@ -376,7 +374,7 @@ article {
 }
 
 .reviews h2 {
-  width: 55%;
+  width: 70%;
 }
 
 .team-photo,
@@ -603,8 +601,9 @@ input[type=button] {
 
   @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
-  p {
-    font-size: 1.125em;
+
+  h2 {
+    font-size: 1.35em;
   }
     /*  =============  Tablet Header Styles   =============  */
       header .content-wrapper {
@@ -627,7 +626,7 @@ input[type=button] {
     /*  =============  Tablet Retreat Styles   =============  */
       .retreat h1 {
         padding: 30px 0px 335px 60px;
-        max-width: 500px;
+        max-width: 450px;
       }
       .retreat .content-wrapper aside {
         width: 100%;
@@ -674,7 +673,7 @@ input[type=button] {
       padding: 5% 0;
     }
     .features-item-description {
-      max-width: 65%;
+      max-width: 60%;
       padding: 2% 0;
       line-height: 1.5em;
     }
@@ -732,11 +731,14 @@ input[type=button] {
       header figure {
         width: 23.33%;
     }
+    h2 {
+      font-size: 1.875em;
+    }
 
     /*  =============  Desktop Retreat Styles   =============  */
       .retreat h1 {
         padding: 30px 0px 335px 100px;
-        max-width: 500px;
+        max-width: 665px;
         font-size: 3.75em;
       }
       .retreat .aside-content {
@@ -766,7 +768,7 @@ input[type=button] {
     .fontawesome-icon {
       min-width: 33.3%;
       max-width: 33.3%;
-      padding:5% 0;
+      padding:2% 0;
     }
     .features-item-description {
       font-size:1.125em;
@@ -778,6 +780,7 @@ input[type=button] {
     }
     .reviews h1 {
       min-width: 75%;
+      font-size: 2.25em;
     }
     .team-photo,
     .team-review {
@@ -790,14 +793,12 @@ input[type=button] {
     .footer-content {
       flex-flow: row wrap;
     }
-    /* .contact,
-    .social {
-      width: 50%;
-    } */
     .social-icons {
       justify-content: space-evenly;
     }
-
+    .footer-content p {
+      font-size: 1em;
+    }
     .social-icons i {
       font-size: 1.875em;
     }
