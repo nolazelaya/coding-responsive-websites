@@ -322,9 +322,7 @@ article {
   align-items: center;
   flex-flow: row wrap;
   margin:0;
-
   text-align: center;
-  font-size:0.875em;
   color: #d8d9e0;
 }
 
