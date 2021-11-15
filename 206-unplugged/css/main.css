@@ -99,9 +99,10 @@ textarea {
     font-size: 1.125em;
    }
     
-   a {
-     /* Style Pending */
-   }
+   a:link, a:visited {
+    color: #e2e3ed;
+    text-decoration: none;
+  }
     
     h1 {
       color: #e2e3ed;
@@ -135,14 +136,11 @@ textarea {
    figure {
          margin: 0;
    }
-    
-   address {
-         /* Style Pending */
-   }
-    
+
    .content-wrapper {
-         /* Style Pending */
+    display: flex;
    }
+
 /* -----------------------  Base Content Style ----------------------- */
 
 .content-wrapper {
@@ -205,10 +203,6 @@ textarea {
 header nav li {
   margin: 0 25px;
 }
-a:link, a:visited {
-  color: #e2e3ed;
-  text-decoration: none;
-}
 h1 {
   font-weight:500;
   font-size: 2em;
@@ -225,7 +219,6 @@ img {
   flex-flow: row wrap;
   align-items: flex-start;
   width: 100%;
-  /* min-height: 830px; */
 }
 
 .retreat-headline {
@@ -406,20 +399,15 @@ footer p {
   height: 100%;
   margin: 0;
 }
-
 .footer-content p {
   font-size: .77em;
 }
-
 .contact {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
 }
-
-
-
 
 /* -----------------------  Base Social Style ----------------------- */
 
@@ -430,14 +418,12 @@ footer p {
   width: 100%;
   max-width: 200px;
 }
-
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width:100%;
 }
-
 footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
@@ -447,10 +433,10 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
-
 footer .social-icons p i {
   font-size: 1.3125em;
 }
+
 /* -----------------------  Base Copyright Style ----------------------- */
 
 .copyright {
@@ -474,7 +460,6 @@ footer .social-icons p i {
   overflow: hidden;
   position: relative;
 }
-
 .map iframe {
   width: 100%;
   height: 100%;
@@ -570,7 +555,6 @@ footer .social-icons p i {
 aside .form {
   margin-top: 30px;
 }
- 
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -578,8 +562,7 @@ input[type=text] {
   font-style: italic;
   padding: 1em;
 }
- 
-input[type=button] {
+ input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
@@ -698,21 +681,17 @@ input[type=button] {
     .footer-content {
       flex-flow: row wrap;
     }
-    /* .contact,
-    .social {
-      width: 50%;
-    } */
     .social-icons {
       justify-content: space-evenly;
     }
-}
+
 
 /* -----------------------  Tablet About Style ----------------------- */
 
 .map figure {
   padding-bottom: 45%;
+ }
 }
-
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
     /*  =============  Desktop Header Styles   =============  */
@@ -807,8 +786,7 @@ input[type=button] {
 
 .map figure {
   padding-bottom: 37.5%;
-}
-
+ }
 }
 
 @media print,
@@ -891,4 +869,4 @@ input[type=button] {
   h3 {
     page-break-after: avoid;
   }
-}
+ }
