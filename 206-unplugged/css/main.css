@@ -466,6 +466,55 @@ footer .social-icons p i {
   left: 0;
 }
 
+/* -----------------------  Base Mission Style ----------------------- */
+
+.mission {
+  background-color:#527158;
+}
+
+.mission-content p {
+  font-size: .875em;
+  width:100%;
+}
+.mission-content h1 {
+  width:100%;
+}
+
+.mission-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin:5%;
+}
+
+/* -----------------------  Base Contact Section Style ----------------------- */
+
+.contact-section {
+  background-color:#2a423a;
+  margin:0;
+  border:0;
+  width: 100%;
+}
+address {
+  font-style: normal;
+}
+.contact-large-column {
+  width:100%;
+  margin:5%;
+}
+
+.contact-section p {
+  font-size: .875em;
+  line-height: 0.25;
+  color: #e1e2ea;
+}
+.contact-section h1 {
+  font-size: 1.875em;
+}
+.contact-section h2 {
+  color: #fff;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -688,6 +737,23 @@ input[type=text] {
 
 .map figure {
   padding-bottom: 45%;
+ }
+
+ .mission-content p {
+  width:45%;
+}
+
+ /* -----------------------  Tablet Contact Section Style ----------------------- */
+
+ .contact-large-column h1 {
+   width: 100%;
+   text-align: center;
+ }
+
+ address {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
  }
 }
     @media only screen and (min-width: 1200px) {
