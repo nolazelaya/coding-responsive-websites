@@ -515,6 +515,32 @@ address {
   color: #fff;
 }
 
+/* -----------------------  Base FAQ Style ----------------------- */
+
+.faq {
+  background-color:#527158;
+}
+
+.faq p {
+  font-size: .875em;
+  width:100%;
+}
+.faq h1 {
+  width:100%;
+}
+.faq h2 {
+  text-align: left;
+}
+.faq-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin:5%;
+}
+.question {
+  margin: 5% 0;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -755,6 +781,16 @@ input[type=text] {
    flex-flow: row wrap;
    justify-content: space-around;
  }
+
+ /* -----------------------  Tablet FAQ Style ----------------------- */
+
+  .question {
+   width: 45%;
+   padding: 0 2.5%;
+    }
+    .faq-content h2 {
+      font-size: .875em;
+    }
 }
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
@@ -851,6 +887,18 @@ input[type=text] {
 .map figure {
   padding-bottom: 37.5%;
  }
+
+  /* -----------------------  Desktop FAQ Style ----------------------- */
+
+     .faq-content h1 {
+       font-size: 3em;
+     }
+     .faq-content p {
+      font-size: 1.125em;
+    }
+    .faq-content h2 {
+      font-size: 1.125em;
+    }
 }
 
 @media print,
